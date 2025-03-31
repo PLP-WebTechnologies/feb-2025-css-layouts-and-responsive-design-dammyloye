@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Hero section */
+.mero {
+    background-size: 100% 200px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin: 1em;
+    width: calc(50% - 2em);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* Tablet layout */
+    .mero {
+        height: 50vh;
+    }
+    .content {
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile layout */
+    .mero {
+        height: 30vh;
+    }
+    .content {
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+        margin: 1em 0;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 0.5em;
+    }
+}
